@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Tic-Tac-Toe</title>
+</head>
+<body>
+    <div class="game-container">
+        <h1>Tic-Tac-Toe Game</h1>
+        <div id="board" class="board">
+            <!-- Cells will be dynamically added here using JavaScript -->
+        </div>
+        <p id="playerTurn" class="player-turn">Player's Turn: X</p>
+        <div id="result" class="result"></div>
+        <button id="resetBtn" class="reset-btn" onclick="resetGame()">New Game</button>
+        <button id="undoBtn" class="undo-btn" onclick="undoMove()">Undo</button>
+        <button id="switchPlayerBtn" class="switch-btn" onclick="switchPlayer()">Switch Player</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

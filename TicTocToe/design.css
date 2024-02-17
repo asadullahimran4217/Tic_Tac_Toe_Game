@@ -1,0 +1,75 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to bottom right, #d4c0d9, #3e00b3); /* Yellow to black gradient */
+    color: white;
+}
+
+.game-container {
+    text-align: center;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 80px);
+    grid-gap: 7px;
+}
+
+.cell {
+    width: 80px;
+    height: 80px;
+    border: none; /* Removed border */
+    font-size: 45px; /* Medium size */
+    font-weight: bold; /* Bold */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    background: #27ae60; /* Green background */
+    color: white;
+}
+
+.cell.O {
+    color: #f39c12; /* Orange for O */
+}
+
+.result {
+    margin-top: 20px;
+    font-size: 24px;
+}
+
+.reset-btn {
+    margin-top: 10px;
+    padding: 10px 8px;
+    font-size: 13px;
+    cursor: pointer;
+    background: #333;
+    color: white;
+    border: none;
+    border-radius: 8px;
+}
+.switch-btn {
+    margin-top: 10px;
+    padding: 10px 8px;
+    font-size: 13px;
+    cursor: pointer;
+    background: #333;
+    color: white;
+    border: none;
+    border-radius: 8px;
+}
+.undo-btn {
+    margin-top: 10px;
+    padding: 10px 7px;
+    font-size: 13px;
+    cursor: pointer;
+    background: #333;
+    color: white;
+    border: none;
+    border-radius: 8px;
+}
